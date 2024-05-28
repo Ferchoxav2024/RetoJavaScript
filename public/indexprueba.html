@@ -7,21 +7,28 @@
     <link rel="stylesheet" href="../public/css/tailwind.css">
     <script defer src="script.js"></script>
 </head>
-<body class="flex items-center justify-center min-h-screen bg-teal-600">
-    <div class="flex flex-col items-center p-4">
-        <h2 class="text-lg font-bold">Calculadora de porcentaje</h2>
-        <div class="flex items-center mb-2">
-          <span class="text-lg">Calcula el</span>
-          <input type="number" class="w-12 pl-2 text-lg" value="10">
-          <span class="text-lg">%</span>
-          <span class="text-lg">de</span>
-          <input type="number" class="w-12 pl-2 text-lg" value="30">
-        </div>
-        <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">CALCULAR</button>
-        <div class="flex items-center mt-2">
-          <span class="text-lg">Resultado:</span>
-          <span class="text-lg font-bold">3</span>
-        </div>
-      </div>
-</body>
+  <body>
+    <div class="flex items-center justify-center min-h-screen bg-teal-700">
+  <div class="bg-teal-900 text-teal-300 p-6 rounded-lg shadow-lg w-full max-w-md">
+    <div class="text-center mb-4">
+        
+      <h1 class="text-4xl font-mono">Calculadora de porcentaje</h1>
+      <hr class= "border-teal-700 mt-20 full-width">
+    </div>
+    <div class="flex justify-between items-center mb-4">
+      <label class="font-mono text-4xl">Calcula el</label>
+      <input type="number" class="bg-teal-800 text-teal-300 border border-teal-800 rounded px-2 py-1 w-32 text-center" value="10">
+      <label class="font-mono">% de</label>
+      <input type="number" class="bg-teal-800 text-teal-300 border border-teal-800 rounded px-2 py-1 w-32 text-center" value="30">
+    </div>
+    <div class="text-center mb-4">
+      <button class="bg-transparent border border-teal-500 text-teal-300 py-1 px-4 rounded hover:bg-teal-800">CALCULAR</button>
+    </div>
+    <div class="text-center">
+      <p class="text-2xl font-mono">Resultado: <span class="text-teal-400">3</span></p>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
 </html>
