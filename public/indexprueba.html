@@ -5,30 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Porcentaje</title>
     <link rel="stylesheet" href="../public/css/tailwind.css">
-    <script defer src="script.js"></script>
+    <script defer src="js/script.js"></script>
 </head>
-  <body>
-    <div class="flex items-center justify-center min-h-screen bg-teal-700">
-  <div class="bg-teal-900 text-teal-300 p-6 rounded-lg shadow-lg w-full max-w-md">
-    <div class="text-center mb-4">
-        
-      <h1 class="text-4xl font-mono">Calculadora de porcentaje</h1>
-      <hr class= "border-teal-700 mt-20 full-width">
+<body class="flex items-center justify-center min-h-screen bg-teal-600">
+    <div class="bg-teal-900 rounded-md text-center text-teal-200 w-full max-w-lg px-4 py-8">
+        <h1 class="mt-5 text-4xl sm:text-5xl font-mono">Calculadora de porcentaje</h1>
+        <h1 class="mt-5 border-b-4 border-teal-600 pb-7 mb-8"></h1>
+        <div class="flex flex-col justify-center items-center mb-4 text-lg sm:text-2xl text-white font-mono">
+            <span>Calcula el</span>&nbsp;
+            <input id="percentage" type="number" class="border-1 border-teal-600 mx-2 w-48 sm:w-64 bg-teal-600 text-left text-white font-mono rounded-md focus:outline-none mb-2 sm:mb-0">
+            <span>% de</span>&nbsp;
+            <input id="total" type="number" class="border-1 border-teal-600 ml-2 w-48 sm:w-64 bg-teal-600 text-left text-white rounded-md focus:outline-none mb-2 sm:mb-0">
+        </div>
+        <div class="flex justify-center">
+            <button id="calculateButton" class="text-teal-300 border-4 border-teal-300 bg-teal-900 hover:bg-teal-700 py-2 px-10 sm:px-20 rounded-md focus:outline-none">
+                CALCULAR
+            </button>
+        </div>
+        <div class="mt-2 p-4 sm:p-6 mb-8 text-3xl sm:text-5xl text-teal-200 font-extrabold">
+            <span id="result"></span>
+        </div>
     </div>
-    <div class="flex justify-between items-center mb-4">
-      <label class="font-mono text-4xl">Calcula el</label>
-      <input type="number" class="bg-teal-800 text-teal-300 border border-teal-800 rounded px-2 py-1 w-32 text-center" value="10">
-      <label class="font-mono">% de</label>
-      <input type="number" class="bg-teal-800 text-teal-300 border border-teal-800 rounded px-2 py-1 w-32 text-center" value="30">
-    </div>
-    <div class="text-center mb-4">
-      <button class="bg-transparent border border-teal-500 text-teal-300 py-1 px-4 rounded hover:bg-teal-800">CALCULAR</button>
-    </div>
-    <div class="text-center">
-      <p class="text-2xl font-mono">Resultado: <span class="text-teal-400">3</span></p>
-    </div>
-  </div>
-</div>
-  </body>
-</html>
+</body>
 </html>
