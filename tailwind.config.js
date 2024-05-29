@@ -2,8 +2,15 @@
 module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+
+        'source-code': ['"Source Code Pro"', 'monospace']
+      },
+    },
   },
   plugins: [
-  require('@tailwindcss/forms'),],
-}
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+  ],
+};

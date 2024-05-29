@@ -5,26 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Porcentaje</title>
     <link rel="stylesheet" href="../public/css/tailwind.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap">
+
+
     <script defer src="js/script.js"></script>
 </head>
-<body class="flex items-center justify-center min-h-screen bg-teal-600">
-    <div class="bg-teal-900 rounded-md text-center text-teal-200 w-full max-w-lg px-4 py-8">
-        <h1 class="mt-5 text-4xl sm:text-5xl font-mono">Calculadora de porcentaje</h1>
-        <h1 class="mt-5 border-b-4 border-teal-600 pb-7 mb-8"></h1>
-        <div class="flex flex-col justify-center items-center mb-4 text-lg sm:text-2xl text-white font-mono">
+<body class="flex items-center justify-center min-h-screen bg-teal-600 p-4">
+    <div class="bg-teal-900 rounded-md text-center text-teal-200 w-full max-w-6xl font-source-code  ">
+        <h1 class="mt-5 text-teal-600 text-3xl md:text-5xl font-bold">Calculadora de porcentaje</h1>
+        <h1 class="mt-0 border-b-4 border-teal-600 pb-7 mb-10"></h1>
+        <div class="flex flex-col md:flex-row justify-center items-center mb-10 text-xl md:text-4xl text-white font-source-code space-y-2 md:space-y-0 md:space-x-2">
             <span>Calcula el</span>&nbsp;
-            <input id="percentage" type="number" class="border-1 border-teal-600 mx-2 w-48 sm:w-64 bg-teal-600 text-left text-white font-mono rounded-md focus:outline-none mb-2 sm:mb-0">
-            <span>% de</span>&nbsp;
-            <input id="total" type="number" class="border-1 border-teal-600 ml-2 w-48 sm:w-64 bg-teal-600 text-left text-white rounded-md focus:outline-none mb-2 sm:mb-0">
+            <input id="percentage" type="number" class="border border-teal-600 mx-1 md:w-64 bg-teal-600 text-left text-white font-mono rounded-md focus:outline-none mb-4 md:mb-0" value="">
+            &nbsp;<span>% de</span>&nbsp;
+            <input id="total" type="number" class="border border-teal-600 w-24 md:w-64 bg-teal-600 text-left text-white rounded-md focus:outline-none mb-4 md:mb-0" value="">
         </div>
-        <div class="flex justify-center">
-            <button id="calculateButton" class="text-teal-300 border-4 border-teal-300 bg-teal-900 hover:bg-teal-700 py-2 px-10 sm:px-20 rounded-md focus:outline-none">
+        <div class="flex justify-center p-4 md:p-5">
+            <button id="calculateButton" class="text-teal-300 border-4 border-teal-300 bg-teal-900 hover:bg-teal-700 py-2 px-20 md:px-20 rounded-md focus:outline-none">
                 CALCULAR
             </button>
         </div>
-        <div class="mt-2 p-4 sm:p-6 mb-8 text-3xl sm:text-5xl text-teal-200 font-extrabold">
+        <div class="mt-10 p-28 text-3xl md:text-6xl text-teal-200 font-extrabold">
             <span id="result"></span>
         </div>
     </div>
 </body>
 </html>
+
